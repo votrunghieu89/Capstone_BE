@@ -111,6 +111,7 @@ builder.Services.AddScoped<EmailService>();
 builder.Services.AddScoped<GoogleService>();
 builder.Services.AddScoped<IAuthRepository, AuthService>();
 builder.Services.AddScoped<IDashboardAccountRepository, DashboardAccountServices>();
+builder.Services.AddScoped<IDashboardJDsRepository , DashboardJDsService>();
 builder.Services.AddScoped<IRecruiterProfileRepository, RecruiterProfileService>();
 builder.Services.AddSingleton<IConnectionMultiplexer>(redisConnection);
 builder.Services.AddSingleton<Redis>();

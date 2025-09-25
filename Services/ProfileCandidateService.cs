@@ -21,7 +21,7 @@ namespace Capstone.Services
         {
             try
             {
-                bool canConnect = await _dbContext.Database.CanConnectAsync();
+                bool canConnect = await _context.Database.CanConnectAsync();
                 if (canConnect)
                 {
                     _logger.LogInformation("Database connection successful.");
@@ -142,6 +142,11 @@ namespace Capstone.Services
                 _logger.LogError(ex, "Exception occurred in uploadCV");
                 return false;
             }
+        }
+
+        Task<bool> ICandidatePofileRepository.UpdateProfileCandidate(ProfileCandidate profileCandidate)
+        {
+            throw new NotImplementedException();
         }
     }
 }
