@@ -18,8 +18,8 @@ namespace Capstone.Database
    
 
 
-        public DbSet<ProfileCandidate> profileCandidates { get; set; }
-        public DbSet<ProfileCompany> profileCompanies { get; set; }
+        public DbSet<ProfileCandidateModel> profileCandidates { get; set; }
+        public DbSet<ProfileCompanyModel> profileCompanies { get; set; }
 
         // CVs
         public DbSet<CVsModel> cVsModels { get; set; }
@@ -28,8 +28,8 @@ namespace Capstone.Database
         // JDs and related
         public DbSet<JDsModel> jDsModel { get; set; }
         public DbSet<JDDetailModel> jDDetailModels { get; set; }
-        public DbSet<PositionModel> positions { get; set; }
-        public DbSet<JDPositionModel> jDPositions { get; set; }
+        public DbSet<PositionModel> positionsModel { get; set; }
+        public DbSet<JDPositionModel> jDPositionsModel { get; set; }
 
         // Favourites
         public DbSet<CVFavouriteModel> cVFavouriteModels { get; set; }
