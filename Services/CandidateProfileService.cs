@@ -201,11 +201,7 @@ namespace Capstone.Services
             }
         }
 
-<<<<<<< HEAD:Services/ProfileCandidateService.cs
-        Task<bool> ICandidatePofileRepository.UpdateProfileCandidate(ProfileCandidate profileCandidate)
-        {
-            throw new NotImplementedException();
-=======
+
         public async Task<int> getPACIDbyAccountId(int accountId)
         {
             try
@@ -229,7 +225,7 @@ namespace Capstone.Services
                 _logger.LogError(ex, "Exception occurred in getPACIDbyAccountId for AccountId: {AccountId}", accountId);
                 return 0;
             }
->>>>>>> origin/master:Services/CandidateProfileService.cs
+
         }
     }
 }
